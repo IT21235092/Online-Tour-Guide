@@ -1,0 +1,14 @@
+form .search
+{
+    size: 30rem;
+    position: absolute;
+text-decoration: none;
+display: inline-block;
+color: #fff;
+font-size: 20px;
+border: 2px solid #fff;
+border-radius: 50px;
+margin-top: 70px;
+padding: 14px 70px;
+cursor: pointer;
+}
