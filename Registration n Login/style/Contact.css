@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Rancho&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    height: 100vh;
+    align-items: center;
+    background-position: center;
+    justify-content: center;
+    background: #fff;
+}
+
+header{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    background: #083484;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo{
+    color:  #fff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    z-index: 10;
+        
+}
+
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+header ul li{
+    list-style: none;
+    margin-left: 20px;
+    z-index: 10;
+}
+
+header ul li a{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+    z-index: 5;
+}
+
+header ul li a:hover,header ul li a.active{
+    background: #fff;
+    color:#2b1055;
+    
+}
+
+.container{
+    width: 80%;
+    margin: 50px auto;
+}
+
+.contact-box{
+    background: #fff;
+    display: flex;
+}
+
+.contact-left{
+    flex-basis: 60%;
+    padding: 40px 60px;
+}
+
+.contact-right{
+    flex-basis: 40%;
+    padding: 40px;
+    background: #fff;
+    color: #000;
+    position: relative;
+}
+
+.contact-right::before{
+    content: '';
+    position: absolute;
+    height: 80%;
+    width: 2px;
+    background: #0470f4;
+}
+
+.contact-right .details{
+    margin: 14px;
+    text-align: center;
+}
+
+.contact-right .details ion-icon{
+    font-size: 30px;
+    color: #0470f4;
+    margin-bottom: 10px;
+}
+
+.contact-right .details .topic{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.contact-right .details .tone,
+.contact-right .details .ttwo{
+    font-size: 14px;
+    color: #afafb6;
+}
+
+h3{
+    text-align: center;
+}
+
+h1{
+    margin-bottom: 10px;
+}
+
+.container p{
+    margin-bottom: 10px;
+}
+
+.input-row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.input-row .input-group{
+    flex-basis: 45%;
+}
+
+input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    padding-bottom: 5px;
+}
+
+textarea{
+    width: 100%;
+    border: 1px solid #ccc;
+    outline: none;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+label{
+    margin-bottom: 6px;
+    display: block;
+}
+
+button{
+    background: #0470f4;
+    width: 100px;
+    border: none;
+    outline: none;
+    color: #fff;
+    height: 35px;
+    border-radius: 5px;
+    margin-top: 20px;
+    box-shadow: 0px 5px 15px 0px rgba(28,0,181,0.3)
+}
+
+.contact-right h3{
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+tr td:first-child{
+    padding-right: 20px;
+}
+
+tr td{
+    padding-top: 20px;
+    color: #fff;
+}
+
+footer{
+    position: relative;
+    width: 100%;
+    background: #083484;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer .social_icon,footer .fmenu{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px;
+}
+footer .social_icon li, footer .fmenu li{
+    list-style: none;
+}
+footer .social_icon li a{
+    font-size: 2em;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+footer .social_icon li a:hover{
+    transform: translate(-10px);
+}
+
+footer .fmenu li a{
+    font-size: 1.2em;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    text-decoration: none ;
+    opacity: 0.75;
+}
+footer .fmenu li a:hover{
+    opacity: 1;
+}

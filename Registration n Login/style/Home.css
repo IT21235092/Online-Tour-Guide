@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto' , sans-serif ;
+}
+
+body{
+    margin: 0;
+    padding: o;
+    justify-content: center;
+    background: #fff;
+    text-align: center;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+.container .backv{
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    mix-blend-mode: overlay;
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo{
+    color:  #fff;
+    font-weight: 800;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    z-index: 10;
+        
+}
+
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+header ul li{
+    list-style: none;
+    margin-left: 20px;
+    z-index: 10;
+}
+
+header ul li a{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+    z-index: 5;
+    font-weight: 500;
+}
+
+header ul li a:hover,header ul li a.active{
+    background: #fff;
+    color:#2b1055;
+    
+}
+
+header ul li ul{
+    position: absolute;
+    padding: 0;
+    display: none;
+    margin-top: 10px;
+}
+
+header ul li ul li{
+    display: block;
+    padding: 15px;
+}
+
+
+header ul li:hover ul{
+    display: block;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#text{
+    position: absolute;
+    color: #fff;
+    white-space: nowrap;
+    font-size: 5.5vw;
+    z-index: 10;
+    font-family: 'Rancho', cursive;
+    transform: translateY(-50%);
+}
+
+.sbox{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    height: 50px;
+    border-radius: 50px;
+    padding: 10px;
+    margin-top: 50px;
+}
+
+.sbox input{
+    outline: none;
+    border: none;
+    background: #fff;
+    padding: 5px 15px;
+    color: black;
+    font-size: 20px;
+    flex: 1;
+    width: 240px;
+    cursor: pointer;
+    
+}
+
+input[type=submit]{
+    color: #fff;
+    width: 10px;
+}
+
+#btn{
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 30px;
+    background: #fff;
+    color: #094b65;
+    font-size: 1.2em;
+    font-weight: 500;
+    letter-spacing: 2px;
+    border-radius: 40px;
+    transform: translateY(100px);
+}
+
+#ctext{
+    font-family: sans-serif;
+    color: black;
+    margin-left: 600px;
+    text-align: center;
+    font-size: 40px;
+    max-width: 600px;
+    position: absolute;
+}
+
+#ctext:before{
+    content: "";
+    display: block;
+    width: 480px;
+    height: 2px;
+    margin-left: 380px;
+    background: #000;
+    position: absolute;
+    left: 0;
+    top:50%;
+}
+
+#ctext:after{
+    content: "";
+    display: block;
+    width: 480px;
+    height: 2px;
+    margin-right: 380px;
+    background: #000;
+    position: absolute;
+    right: 0;
+    top:50%;
+}
+
+.card{
+    width: 300px;
+    height: 330px;
+    display: inline-block;
+    border-radius: 20px;
+    padding: 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 30px 70px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.7s;
+}
+
+.card1{
+    background-image:url(gallery_Sigiriya-Rock.jpg);
+}
+.card2{
+    background-image: url(istockphoto-502631824-612x612.jpg);
+}
+.card3{
+    background-image:url(shutterstock_797810815-1024x683.jpg);
+}
+.card4{
+    background-image: url(360_F_312873213_G5ZVLq1P9zALcVXbQoWssNJzbYM3rYTx.jpg);
+}
+.card5{
+    background-image: url(3558308.jpg);
+}
+.card6{
+    background-image: url(hikkaduwa-beach-drone-1.jpg);
+}
+
+.card:hover{
+    transform: translate(-10px);
+}
+h5{
+    color: #fff;
+    text-shadow: 0 0 5px #999;
+}
+.card p{
+    color: aliceblue;
+    text-shadow: 0 0 15px #999;
+    font-size: 8px;
+}
+
+.container2{
+    position: relative;
+    width: 1200px;
+    height: 500px;
+    padding-top: 50px;
+    margin: 140px auto;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(pngtree-cartoon-national-holiday-season-travel-banner-image_168735.jpg);
+}
+
+.row{
+    display: flex;
+    height: 88%;
+    align-items: center;
+}
+.col{
+    flex-basis: 50%;
+}
+
+h1{
+    color:aliceblue;
+    font-size: 60px;
+}
+
+.pcard{
+    width: 300px;
+    height: 330px;
+    display: inline-block;
+    padding: 5px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 10px;
+    background-position: center;
+    background-size: cover;
+    background: #000;
+}
+
+.pcard1{
+    background-image:url(vista-walkerhill-seoul.jpg);
+}
+.pcard2{
+    background-image: url(the-deck-at-the-west.jpg);
+}
+.pcard3{
+    background-image:url(Canareef_pic-1.webp);
+}
+
+.rcontent{
+    margin-top: 300px;
+    position: absolute;
+    width: 400px;
+    height: 120px;
+    background: #fff;
+    border-radius: 45px;
+    box-shadow: 0 2px 12px 0 rgba(0,0,0,0.4);
+}
+
+.header2{
+    height: 60px;
+    background: #083484;
+    overflow: hidden;
+    border-radius: 50px;
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,0.2);
+}
+
+.header2 h2{
+    color: #fff;
+    text-align: center;
+    font-weight: 500;
+    margin-top: 10px;
+    font-size: 30px;
+}
+
+.result a{
+    
+    color: #1a1a1a;
+    font-size: 23px;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 30px;
+}
+
+.result a:hover{
+    color: black;
+}
+
+footer{
+    position: relative;
+    width: 100%;
+    background: #083484;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer .social_icon,footer .fmenu{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px;
+}
+footer .social_icon li, footer .fmenu li{
+    list-style: none;
+}
+footer .social_icon li a{
+    font-size: 2em;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+footer .social_icon li a:hover{
+    transform: translate(-10px);
+}
+
+footer .fmenu li a{
+    font-size: 1.2em;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    text-decoration: none ;
+    opacity: 0.75;
+}
+footer .fmenu li a:hover{
+    opacity: 1;
+}
+footer p{
+    color: #fff;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
